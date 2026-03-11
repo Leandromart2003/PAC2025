@@ -2,7 +2,6 @@
 # {} -> estrutura usada para criar um dicionário
 # Um dicionário guarda dados em pares: chave -> valor
 # Muito usado para representar dados tipo JSON
-
 # Exemplo inicial
 carros = {"Marca": "BMW", "Modelo": "M3"}
 # ----------------------------------------------------
