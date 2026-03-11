@@ -4,9 +4,7 @@
 # Muito usado para representar dados tipo JSON
 
 # Exemplo inicial
-carros = [{"Marca": "BMW", "Modelo": "M3"}, #index 0
-          {"Marca": "Fiat", "Modelo": "Panda"}] #index 1
-print(carros[1].get("Marca"))
+carros = {"Marca": "BMW", "Modelo": "M3"}
 # ----------------------------------------------------
 # Mostrar o dicionário completo
 print(carros)
