@@ -9,7 +9,6 @@ if operating.path.exists(filename):
     with open(filename,'r',encoding='utf-8') as manipfile:
         objecto=json.load(manipfile) # tenta carregar o file json
 
-       
 print(objecto)
 # no final salvar o novo file
 
