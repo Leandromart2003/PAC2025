@@ -3,7 +3,7 @@ import json
 
 objecto={}
 
-filename=R"C:\DEV\Ciseg_0925\Aulas\A4\Data\textoJason.json"
+filename=R"./Aula3/PastaFiles/textoJason.json"
 
 if operating.path.exists(filename):
     with open(filename,'r',encoding='utf-8') as manipfile:

@@ -16,7 +16,7 @@
 # - Sempre fechar o ficheiro após o uso com close()
 # - Exemplo: ficheiro.close()
 
-filename=R"C:\DEV\Ciseg_0925\Aulas\A4\Data\texto.txt"
+filename=R"./Aula3/PastaFiles/texto.txt"
 
 with open(filename,'r',encoding='utf-8') as manipfile:
    Texto=manipfile.read()
