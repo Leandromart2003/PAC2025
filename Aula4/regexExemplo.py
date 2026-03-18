@@ -27,3 +27,5 @@ print (resultado.span())
 #{
 # nome: Pedro
 # } dicionario /objeto
+
+#https://regex101.com/
