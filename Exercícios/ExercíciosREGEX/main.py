@@ -15,3 +15,9 @@ print("dados carregados com sucesso!")
 for pessoa in lista_pessoas:
     print(f"Nome: {pessoa['nome']}, Email: {pessoa['email']} ")
 
+def validar_email(email):
+    padrao_email = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    if re.match(padrao_email, email):
+        return True
+    else:
+        return False
