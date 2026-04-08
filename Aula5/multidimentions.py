@@ -1,6 +1,7 @@
 #multiplas dimençoes
 
-lista=["dario","Joao"]
+lista=["dario",
+       "Joao" ]
 
 for i in range(len(lista)):
     print("i na 1 dimençao nome completo : ", i , "nome : ", lista[i])
