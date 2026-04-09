@@ -7,7 +7,7 @@
 # -------------------------------
 # Imprime os primeiros 255 caracteres ASCII
 
-for i in range(1, 255):
+for i in range(1, 256):
     print(f"{i} -> {chr(i)}")
 
 print(f"Código ASCII da letra 'o': {ord('o')}")
@@ -52,6 +52,6 @@ else:
     print("Os caracteres são diferentes")
 
 # Substituir um elemento da lista
-nomes[0] = nomes[1]
+nomes[0],nomes[1] = nomes[1],nomes[0]
 
 print("Lista atualizada:", nomes)
