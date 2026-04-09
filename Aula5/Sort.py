@@ -51,7 +51,7 @@ if nomes[0][6] == nomes[1][6]:
 else:
     print("Os caracteres são diferentes")
 
-# Substituir um elemento da lista
+# trocar elemento da lista
 nomes[0],nomes[1] = nomes[1],nomes[0]
 
 print("Lista atualizada:", nomes)
