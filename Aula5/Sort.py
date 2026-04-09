@@ -1,37 +1,57 @@
-# controlo de fluxos
-#Exemplo
-#i=1
-#while (i<255):
-#    print(i,"   ",chr(i))
-#    i+=1
-#print ( ord("o"))
-#i=0
-#numLista=[3,2,7,9,1,4,6]
-# ordenar [2,3,7,9,1,4,6]
+# ===============================
+# CONTROLO DE FLUXOS – EXEMPLOS
+# ===============================
 
-#print(numLista)
-#numLista.insert(i,numLista[i+1])
-#print(numLista)
-#numLista.pop(i+2)
-#print(numLista)
+# -------------------------------
+# Exemplo 1: Código ASCII
+# -------------------------------
+# Imprime os primeiros 255 caracteres ASCII
 
-flagtroca=True
-numLista=[3,2,7,9,4,6,1]
-#index    0 1 2 3 4 5 6
-print("tamanho lista" ,len(numLista) )
-while flagtroca:
-    flagtroca=False
-    for i in range(len(numLista)-1):
-        if numLista[i] > numLista[i+1]:
-            numLista[i],numLista[i+1] = numLista[i+1],numLista[i]
-            flagtroca=True
+for i in range(1, 255):
+    print(f"{i} -> {chr(i)}")
 
-print (numLista)
+print(f"Código ASCII da letra 'o': {ord('o')}")
 
 
-# Exemplo 2
-#nomelista=["joana quental", "joao quental" , "pedro lameiro"]
+# -------------------------------
+# Exemplo 2: Ordenação (Bubble Sort)
+# -------------------------------
 
-#nomelista[0][6] comparar nomelista[1][6]
+numeros = [3, 2, 7, 9, 4, 6, 1]
 
-#nomelista[0]=nomelista[1]
+print("\nLista original:", numeros)
+print("Tamanho da lista:", len(numeros))
+
+# Algoritmo Bubble Sort
+houve_troca = True
+
+while houve_troca:
+    houve_troca = False
+    for i in range(len(numeros) - 1):
+        if numeros[i] > numeros[i + 1]:
+            # troca de elementos
+            numeros[i], numeros[i + 1] = numeros[i + 1], numeros[i]
+            houve_troca = True
+
+print("Lista ordenada:", numeros)
+
+
+# -------------------------------
+# Exemplo 3: Manipulação de Strings em Lista
+# -------------------------------
+
+nomes = ["Joana Quental", "Joao Quental", "Pedro Lameiro"]
+
+# Aceder a um carácter específico
+print("\nLetra na posição 6 do primeiro nome:", nomes[0][6])
+
+# Comparar caracteres
+if nomes[0][6] == nomes[1][6]:
+    print("Os caracteres são iguais")
+else:
+    print("Os caracteres são diferentes")
+
+# Substituir um elemento da lista
+nomes[0] = nomes[1]
+
+print("Lista atualizada:", nomes)
