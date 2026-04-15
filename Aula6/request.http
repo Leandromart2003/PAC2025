@@ -1,0 +1,8 @@
+GET https://www.w3schools.com/html/default.asp
+
+###
+GET https://profile.w3schools.com
+
+###
+
+GET https://trainingserver.atec.pt/TrainingServer/Mulberry/JSON/Controls/Calendar/getCalendarDataSource.ashx?command=_SelectAllSchedulesDataSetGivenByUserId&oId=7194&idField=DataValueField&titleField=DataTextField&startDateField=DataStartField&endDateField=DataEndField&backgroundColorField=&textColorField=textcolor&eventColorField=color&description=description&picField=pic&urlField=url&start=1776034800&end=1776639600&_=1776262570643
