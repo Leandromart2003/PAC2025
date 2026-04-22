@@ -1,0 +1,38 @@
+#Getting Started
+
+POST http://localhost:2525/imposters 
+Content-Type: application/json
+
+{
+  "port": 4545,
+  "name": "API1",
+  "protocol": "http",
+  "stubs": [{
+    "responses": [
+      { "is": { "statusCode": 200,
+      
+                "body": { "name":"Dario", "tel":96404}
+                }}
+    ],
+    "predicates": [{
+      "and": [
+        {
+          "equals": {
+            "path": "/test2",
+            "method": "POST",
+            "headers": { "Content-Type": "application/json" }
+          }
+        },
+        {
+          "not": {
+            "contains": { "body": "requiredField" },
+            "caseSensitive": true
+          }
+        }
+      ]
+    }]
+  }]
+}
+
+###
+DELETE http://localhost:2525/imposters/4545
